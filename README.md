@@ -20,7 +20,7 @@ The Neo4j LOAD CSV command is a perfectly adequate CSV file loader.
 
 
 ## Load All nodes
-Use the Cypher LOAD CSV command to load all nodes - 1 label at a time.
+Use the Cypher LOAD CSV command to load all nodes - 1 label at a time.  After the nodes are loaded, we will connect them by creating relationships between them.
 
 ### Characters
 
@@ -44,9 +44,6 @@ Return c
 
 
 ### Starships
-name,model,manufacturer,cost_in_credits,length,max_atmosphering_speed,crew,passengers,cargo_capacity,consumables,hyperdrive_rating,MGLT,starship_class
-Executor,Executor-class star dreadnought,"Kuat Drive Yards, Fondor Shipyards",1143350000,19000,n/a,279144,38000,250000000,6 years,2.0,40,Star dreadnought
-
 ``` Cypher
 
 // LOAD Starships
@@ -145,12 +142,36 @@ Return s
 
 ```
 
-## Load Relationships Between nodes
+### Add Social Network names to existing Characters
 
-### Characters and their home Planets
-name,height,mass,hair_color,skin_color,eye_color,birth_year,gender,homeworld,species
-Luke Skywalker,172,77,blond,fair,blue,19BBY,male,Tatooine,Human
+``` Cypher
+LOAD CSV WITH HEADERS FROM
+"https://raw.githubusercontent.com/mquinz/star_wars_demo/master/data/social/characterNames.csv"
+AS row
 
+ match (c:Character {name:row.characterName})
+set c.socialName = row.socialName
+
+```
+### Add new Characters from Social Media
+
+This will create Character nodes using the information from the social network feed for characters that do not match any of the existing nodes.  It will MERGE/CREATE nodes only for the rows with 'none' as the characterName.  For example, the Character Boba Fett already has a socialName so it will be skipped, but the socialName CAMIE does not match any existing Character so they will be added during this step.
+
+```
+LOAD CSV WITH HEADERS FROM
+"https://raw.githubusercontent.com/mquinz/star_wars_demo/master/data/social/characterNames.csv"
+AS row
+with row where row.characterName = "none"
+
+MERGE (c:Character {name:row.socialName})
+set c.socialName = row.socialName
+```
+## Load Relationships Between Nodes
+By loading the nodes first, creating the relationships use a simple pattern of using MATCH statements to get the From and To nodes, then doing a MERGE for the relationship name.
+
+### Characters -> home Planets , and Characters -> Species
+
+With a single pass through the characters, we can create relationships to both their home planets and to their Species
 
 ``` Cypher
 LOAD CSV WITH HEADERS FROM
@@ -162,7 +183,19 @@ MATCH (c:Character {name : row.name}),
 MERGE (c)-[:HAS_HOMEPLANET]->(p),
  (c)-[:IS]->(s)
 
+```
 
+### Character Interactions
 
+The interactions.csv file contains relationships between the characters.  This file was created based on script analysis to identify when one character speaks to another.  The source of this data is the Social Network so the keys used here will be the socialName fields.
+
+``` Cypher
+LOAD CSV WITH HEADERS FROM
+"https://raw.githubusercontent.com/mquinz/star_wars_demo/master/data/social/interactions.csv"
+AS row
+MATCH (char1:Character {socialName : row.source}),
+      (char2:Character {socialName : row.target})
+MERGE (char1)-[i:INTERACTED_WITH]->(char2)
+     SET i.count = toInteger(row.count)
 
 ```
