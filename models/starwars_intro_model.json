@@ -1,0 +1,239 @@
+{
+  "style": {
+    "font-family": "Nunito Sans",
+    "background-color": "#F2F2F2",
+    "background-image": "",
+    "background-size": "100%",
+    "node-color": "#4C8EDA",
+    "border-width": 0,
+    "border-color": "#000000",
+    "radius": 75,
+    "node-padding": 5,
+    "node-margin": 2,
+    "outside-position": "auto",
+    "node-icon-image": "",
+    "node-background-image": "",
+    "icon-position": "inside",
+    "icon-size": 64,
+    "caption-position": "inside",
+    "caption-max-width": 200,
+    "caption-color": "#ffffff",
+    "caption-font-size": 20,
+    "caption-font-weight": "normal",
+    "label-position": "inside",
+    "label-display": "bare",
+    "label-color": "#ffffff",
+    "label-background-color": "#848484",
+    "label-border-color": "#848484",
+    "label-border-width": 3,
+    "label-font-size": 20,
+    "label-padding": 5,
+    "label-margin": 4,
+    "directionality": "directed",
+    "detail-position": "above",
+    "detail-orientation": "parallel",
+    "arrow-width": 3,
+    "arrow-color": "#848484",
+    "margin-start": 5,
+    "margin-end": 5,
+    "margin-peer": 20,
+    "attachment-start": "normal",
+    "attachment-end": "normal",
+    "relationship-icon-image": "",
+    "type-color": "#848484",
+    "type-background-color": "#F2F2F2",
+    "type-border-color": "#848484",
+    "type-border-width": 0,
+    "type-font-size": 21,
+    "type-padding": 5,
+    "property-position": "outside",
+    "property-alignment": "colon",
+    "property-color": "#848484",
+    "property-font-size": 20,
+    "property-font-weight": "normal"
+  },
+  "nodes": [
+    {
+      "id": "n1",
+      "position": {
+        "x": 757.1569213916856,
+        "y": 508.6401065206372
+      },
+      "caption": "",
+      "labels": [
+        "Character"
+      ],
+      "properties": {
+        "name": "Han Solo",
+        "birthYear": "aby20",
+        "pilot": "true",
+        "occupation": "smuggler"
+      },
+      "style": {}
+    },
+    {
+      "id": "n2",
+      "position": {
+        "x": 855.9530721286378,
+        "y": -1.1603126367623418
+      },
+      "caption": "",
+      "labels": [
+        "Character"
+      ],
+      "properties": {
+        "name": "Leia Organa",
+        "birthYear": "aby25"
+      },
+      "style": {}
+    },
+    {
+      "id": "n3",
+      "position": {
+        "x": 1156.709319819396,
+        "y": 299.59593505399573
+      },
+      "caption": "",
+      "labels": [
+        "Character"
+      ],
+      "properties": {
+        "name": "Luke Skywalker",
+        "birthYear": "aby25",
+        "jedi": "true"
+      },
+      "style": {}
+    },
+    {
+      "id": "n4",
+      "position": {
+        "x": 404.70016408415063,
+        "y": 32.75447837972462
+      },
+      "caption": "",
+      "labels": [
+        "Character"
+      ],
+      "properties": {
+        "name": "Jabba the Hutt",
+        "wt": "1000"
+      },
+      "style": {}
+    },
+    {
+      "id": "n5",
+      "position": {
+        "x": 306.20038403427674,
+        "y": 347.0864586231932
+      },
+      "caption": "",
+      "labels": [
+        "Starship"
+      ],
+      "properties": {
+        "name": "Millennium Falcom",
+        "length": "77"
+      },
+      "style": {
+        "node-color": "#68bc00"
+      }
+    },
+    {
+      "id": "n6",
+      "position": {
+        "x": 364.9465437042402,
+        "y": 641.1991510968182
+      },
+      "caption": "",
+      "style": {},
+      "labels": [
+        "Character"
+      ],
+      "properties": {
+        "name": "Chewbacca",
+        "birthYear": "bby5",
+        "pilot": "true"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "n0",
+      "fromId": "n1",
+      "toId": "n2",
+      "type": "MARRIED_TO",
+      "properties": {
+        "year": "aby55"
+      },
+      "style": {
+        "detail-position": "inline"
+      }
+    },
+    {
+      "id": "n1",
+      "fromId": "n2",
+      "toId": "n3",
+      "type": "TWIN_OF",
+      "properties": {},
+      "style": {
+        "detail-position": "inline"
+      }
+    },
+    {
+      "id": "n2",
+      "fromId": "n1",
+      "toId": "n4",
+      "type": "WORKED_FOR",
+      "properties": {
+        "year": "aby50"
+      },
+      "style": {
+        "detail-position": "inline"
+      }
+    },
+    {
+      "id": "n3",
+      "fromId": "n1",
+      "toId": "n5",
+      "type": "OWNS",
+      "properties": {},
+      "style": {
+        "detail-position": "below"
+      }
+    },
+    {
+      "id": "n4",
+      "fromId": "n1",
+      "toId": "n5",
+      "type": "PILOT_OF",
+      "properties": {},
+      "style": {
+        "detail-position": "above"
+      }
+    },
+    {
+      "id": "n5",
+      "fromId": "n4",
+      "toId": "n2",
+      "type": "IMPRISONED",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n6",
+      "type": "FRIEND_OF",
+      "style": {},
+      "properties": {},
+      "fromId": "n1",
+      "toId": "n6"
+    },
+    {
+      "id": "n7",
+      "type": "CO_PILOT_OF",
+      "style": {},
+      "properties": {},
+      "fromId": "n6",
+      "toId": "n5"
+    }
+  ]
+}
