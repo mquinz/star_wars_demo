@@ -451,6 +451,62 @@ MERGE (c:Character {name: 'markq'})
 ON CREATE
   SET c.hairColor='skintone'
 RETURN c
-``` 
+```
 #### Bonus query
 Change the name to a Character that already exists to see if the hairColor is updated.
+
+
+## Insert a New Relationship (Safely)
+
+Creating a new relationship between 2 existing nodes is a very simple process.  First, use MATCH statements to obtain the starting and ending nodes, then CREATE/MERGE a relationship using a direction and a Type.  Relationship properties are optional.
+
+
+Use this template to create your own relationship
+``` Cypher
+MATCH (c1:Character {name: 'markq'}),(c2:Character {name: 'Han Solo'})
+MERGE (c1)-[f:FOLLOWS]->(c2)
+RETURN c1,f,c2
+```
+#### Bonus query
+
+
+## Updating a Node
+
+To update a node, use MATCH statements to obtain the nodes that will be updated, then use SET statements to apply the new values.   Don't forget to use local variable names in order to reference the nodes/relationships to be changed.
+
+Be very careful when crafting the MATCH statement. Neo4j WILL update every record that matches the criteria - even when you think you are only updating a single row.  In the example below, if the where clause did not exist, ALL Characters would be updated.
+
+``` Cypher
+
+MATCH (c:Character)
+WHERE c.name = 'markq'
+SET c.nationality = 'US',
+    c.birthYear = '2022'
+
+```
+
+Choose a character and give them a new property
+
+#### Bonus query
+Use a map to give your node multiple key/value pairs at once.  Using the += syntax will merge the existing properties with the ones you supply.  Using the = syntax will replace the existing properties with your map.
+
+``` Cypher
+// example
+MATCH (c:Character)
+WHERE c.name = 'markq'
+SET  c+= {nationality:'US',
+          birthYear:'2022',
+        }
+
+```
+
+# APOC Functions
+APOC (Awesome Procedures on Cypher) is a utility library created by Neo4j engineers to provide 400+ functions and procedures to simplify Cypher expressions.  They are also used to batch Update/delete transactions into smaller chunks so that Java Out-of-Memory exceptions are minimized.
+
+APOC procedures and functions are invoked in Cypher statements by using their full signature and passing any necessary arguments.  
+
+The following example will find the percentile values of an attribute.
+``` Cypher
+MATCH (char:Character)
+RETURN apoc.agg.percentiles(char.pagerank, [0.25, 0.5, 0.75, 1.0]) AS percentiles;
+```
