@@ -38,7 +38,7 @@ We will be using each of these during today's session.
 We will start with some pre
  Since we'll need to load some data before we can run queries, let's use the Import Tool to load some CSV files.
 
-### Import CSV Files Using the Import Tool
+### Import CSV Files Using the Data Importer Tool
 
 Connect to the instance using the Bolt protocol.  The connection
 information is in the credentials that you (hopefully) downloaded.
@@ -47,9 +47,6 @@ information is in the credentials that you (hopefully) downloaded.
 
 And the Data Importer page should appear - ready for importing.
 ![empty_data_importer](./images/empty_data_importer.png "empty_data_importer")
-
-
-mYK18OPMLy5lrszIz1xh-TRTZV8MI-CGHaHgclhdlm0
 
 ## Downloading the CSV Files
 
