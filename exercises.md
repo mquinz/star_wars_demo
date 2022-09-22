@@ -275,7 +275,14 @@ _____________________________
 1. Give the relationship a Type and a direction.
 
 
-# Exercise 2 - Simple Queries
+# Exercise 2 - Using the Data Importer tool
+
+##
+
+
+
+
+# Exercise 3 - Simple Queries
 
 ## Finding Nodes using Key
 

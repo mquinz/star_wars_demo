@@ -1,6 +1,6 @@
-# Star-Wars Hands-on Training Instructions
+# Star-Wars Hands-on Training Data Preparation
 
-## Getting Started
+This explains the process to access a Neo4j Aura database running in the cloud.  It covers how to create an empty database instance and to load it with Star-Wars datasets.
 
 ## Setting Up Free Account in Neo4j Aura
 
@@ -143,6 +143,18 @@ Using this method, define the remaining relationships:
 
 There is an additional relationship betwen Characters that we will reserve for later.
 We will use it to illustrate the Cypher LOAD CSV process in a later exercise.
+
+### Previewing The Import
+
+Clicking on the Preview button will generate the import scripts and perform a test run with a sampling of data from the CSV files.
+This may be enough to get a sense of how the structure of the graph will look when the import is performed.
+
+![preview](./images/preview.png "preview")
+
+If the nodes and relationships look okay,click on the Run Import button and sit back while the import takes place.
+Verify that the results meet expectations.  
+![results](./images/results.png "results")
+
 
 
 ## Load All nodes
