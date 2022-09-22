@@ -278,7 +278,7 @@ _____________________________
 # Exercise 2 - Using the Data Importer tool
 
 Follow the instructions in
-[Star_Wars_Data_Preparation.md](/Star_Wars_Data_Preparation)
+[Star_Wars_Data_Preparation.md](/Star_Wars_Data_Preparation.md)
 
 
 # Exercise 3 - Simple Queries
