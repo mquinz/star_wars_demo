@@ -1,29 +1,35 @@
 
-# Exercises for Star-Wars Demo
+# Hands-On Exercises for Star-Wars Demo
 
-# Exercise 1 - Arrows Modeling Exercise
+
+# Exercise 1 - Arrows Modeling Exercises
+
 
 ## Neo4j Data Modeling tool
 
 https://neo4j.com/labs/arrows/
-Watch the 3-minute training video (optional)
+
+Watch the 3-minute training video.  This is one of  the best 3-minute investments of time you can make!!!!
 
 Go to the Arrows App
 https://arrows.app/
 
-_____________________________
 
-## Experiment On a New Model
+## Exercise 1.1 Experiment On a New Model
 - Create some nodes and relationships to get a hang of the tool.  
 - Give each node a Label and some properties.
 - Give each relationship a type
 
 
-## Import an Existing Model
+## Exercise 1.2 Import an Existing Model
 1. Click on the Gold Arrow at the top left corner of the screen.
 1. Click on the Import menu option.
 1. Cut and paste the following json text into the text import box.
 1. Choose a theme for displaying the Model.
+
+The following JSON object is also contained in
+[starwars_intro_model.json](/models/starwars_intro_model.json)
+
 
 ``` json
 {
@@ -268,18 +274,20 @@ _____________________________
 
 ```
 
-## Adding a New Node
+## Exercise 1.3 Adding a New Node
 1. Add a new node with and give it a Character Label.
 1. Give your new Character node some Properties.
 1. Create a relationship between your node and another node.
 1. Give the relationship a Type and a direction.
 
+--------------------------
 
 # Exercise 2 - Using the Data Importer tool
 
 Follow the instructions in
 [Star_Wars_Data_Preparation.md](/Star_Wars_Data_Preparation.md)
 
+--------------------------
 
 # Exercise 3 - Simple Queries
 
@@ -318,13 +326,24 @@ RETURN n.name, n.height as height_in_cm
 ORDER BY height_in_cm DESC LIMIT 5
 
 ```
+-----------------------------
 
-# Exercise 4 - relationship Queries
+# Exercise 4 - Relationship Queries
+
+
 
 
 ## Traversing Basics
 
 A traversal is when Neo4j follows a relationship to 1 or more additional nodes.  It is similar in concept to a join in RDBMS but executes much differently.
+
+This query will simply find a small number of nodes that have a particular type of relationship.  It is extremely handy for getting a sense of the Graph.
+
+``` Cypher
+
+MATCH path=(:Planet)<-[:HOMEWORLD]-()
+RETURN path
+```
 
 The following query will find all of the Character nodes that have a HOMEWORLD relationship to the Planet with name = Naboo.
 
@@ -348,7 +367,7 @@ RETURN c1.name as char1, c2.name as char2, i.count as interactions
 ORDER by interactions DESC LIMIT 1
 ```
 
-### Relationship properties
+### Relationship Properties
 
 Who does Han Solo interact with the most?
 
@@ -365,7 +384,7 @@ ORDER BY interactions DESC LIMIT 10
 Add a relationship from the otherChar Node to a Species node to get the names of the otherChar's species.
 
 
-### Variable Length (Recursive) queries
+### Variable Length (Recursive) Queries
 
 Which characters Interact with the characters that Han Solo Interacts with?
 
@@ -380,7 +399,7 @@ How many nodes?  How many relationships?
 
 #### Bonus Query:  
 Change the maximum of 2 to 3.  It may take a few seconds.  How many nodes?  How many relationships?
-
+-------------------------------------
 # Exercise 5 - Interesting Queries
 
 
@@ -462,6 +481,7 @@ CALL { WITH c
 RETURN *
 
 ```
+------------------------
 
 # Exercise 6 - Queries to Create/Update data
 
@@ -533,6 +553,8 @@ SET  c+= {nationality:'US',
         }
 
 ```
+---------------------------
+
 # Exercise 7 - APOC
 ## APOC Functions
 APOC (Awesome Procedures on Cypher) is a utility library created by Neo4j engineers to provide 400+ functions and procedures to simplify Cypher expressions.  They are also used to batch Update/delete transactions into smaller chunks so that Java Out-of-Memory exceptions are minimized.
@@ -550,3 +572,8 @@ The following APOC command will return accurate, up-to-the-second statistics abo
 ``` Cypher
 CALL apoc.meta.stats
 ```
+---------------------------
+
+# Exercise 8 - Bloom Visualization
+
+From the Aura Instance console, select the Explore button and enter the user name and password for the instance.
