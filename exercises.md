@@ -319,6 +319,9 @@ ORDER BY height_in_cm DESC LIMIT 5
 
 ```
 
+# Exercise 4 - relationship Queries
+
+
 ## Traversing Basics
 
 A traversal is when Neo4j follows a relationship to 1 or more additional nodes.  It is similar in concept to a join in RDBMS but executes much differently.
@@ -361,6 +364,7 @@ ORDER BY interactions DESC LIMIT 10
 #### Bonus Query:  
 Add a relationship from the otherChar Node to a Species node to get the names of the otherChar's species.
 
+
 ### Variable Length (Recursive) queries
 
 Which characters Interact with the characters that Han Solo Interacts with?
@@ -376,6 +380,8 @@ How many nodes?  How many relationships?
 
 #### Bonus Query:  
 Change the maximum of 2 to 3.  It may take a few seconds.  How many nodes?  How many relationships?
+
+# Exercise 5 - Interesting Queries
 
 
 ### Intersection of Related nodes
@@ -434,8 +440,30 @@ MATCH (c1:Character {name: 'Ackbar'}),(c2:Character {name:"CLONE COMMANDER CODY"
 match p =allShortestPaths((c1)-[:INTERACTS_WITH*..10]-(c2))
 return p
  ```
+###  Subqueries
 
-# Queries to Create data
+Subqueries are an extremely useful method for breaking a complex problem down into separate parts.
+
+In the following example, the outer MATCH statement will select all Character nodes.  The WITH statment will sort them according to the number of relationships they have and select only the top 5.
+
+The 5 surviving nodes (variable c) are then passed one at a time to the CALL statement (the subquery)
+
+The subquery then performs its own MATCH statement to obtain some Characters that interacted with them.
+
+
+``` cypher
+
+MATCH (c:Character) WITH c
+ORDER BY size((c)--()) DESC LIMIT 5
+CALL { WITH c
+    MATCH path=(c)<--(:INTERACTED_WITH)--()
+    RETURN path LIMIT 5
+}
+RETURN *
+
+```
+
+# Exercise 6 - Queries to Create/Update data
 
 ## Insert a New Node
 
@@ -505,8 +533,8 @@ SET  c+= {nationality:'US',
         }
 
 ```
-
-# APOC Functions
+# Exercise 7 - APOC
+## APOC Functions
 APOC (Awesome Procedures on Cypher) is a utility library created by Neo4j engineers to provide 400+ functions and procedures to simplify Cypher expressions.  They are also used to batch Update/delete transactions into smaller chunks so that Java Out-of-Memory exceptions are minimized.
 
 APOC procedures and functions are invoked in Cypher statements by using their full signature and passing any necessary arguments.  
@@ -515,4 +543,10 @@ The following example will find the percentile values of an attribute.
 ``` Cypher
 MATCH (char:Character)
 RETURN apoc.agg.percentiles(char.pagerank, [0.25, 0.5, 0.75, 1.0]) AS percentiles;
+```
+### Graph Statistics
+The following APOC command will return accurate, up-to-the-second statistics about the nodes and relationships in the graph.
+
+``` Cypher
+CALL apoc.meta.stats
 ```
