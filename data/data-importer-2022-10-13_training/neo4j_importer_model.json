@@ -1,0 +1,856 @@
+{
+  "version": "0.6.2",
+  "graph": {
+    "nodes": [
+      {
+        "id": "n0",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "caption": "Character"
+      },
+      {
+        "id": "n1",
+        "position": {
+          "x": -56,
+          "y": 285
+        },
+        "caption": "Species"
+      },
+      {
+        "id": "n2",
+        "position": {
+          "x": 222,
+          "y": 220
+        },
+        "caption": "Planet"
+      }
+    ],
+    "relationships": [
+      {
+        "id": "n0",
+        "type": "IS",
+        "fromId": "n0",
+        "toId": "n1"
+      },
+      {
+        "id": "n1",
+        "type": "HOMEWORLD",
+        "fromId": "n0",
+        "toId": "n2"
+      },
+      {
+        "id": "n2",
+        "type": "INTERACTS_WITH",
+        "fromId": "n0",
+        "toId": "n0"
+      }
+    ]
+  },
+  "dataModel": {
+    "fileModel": {
+      "fileSchemas": {
+        "vehicles.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "name",
+              "type": "string",
+              "sample": "Sand Crawler",
+              "include": true
+            },
+            {
+              "name": "model",
+              "type": "string",
+              "sample": "Digger Crawler",
+              "include": true
+            },
+            {
+              "name": "manufacturer",
+              "type": "string",
+              "sample": "Corellia Mining Corporation",
+              "include": true
+            },
+            {
+              "name": "cost_in_credits",
+              "type": "string",
+              "sample": "150000",
+              "include": true
+            },
+            {
+              "name": "length",
+              "type": "string",
+              "sample": "36.8",
+              "include": true
+            },
+            {
+              "name": "max_atmosphering_speed",
+              "type": "string",
+              "sample": "30",
+              "include": true
+            },
+            {
+              "name": "crew",
+              "type": "integer",
+              "sample": "46",
+              "include": true
+            },
+            {
+              "name": "passengers",
+              "type": "string",
+              "sample": "30",
+              "include": true
+            },
+            {
+              "name": "cargo_capacity",
+              "type": "string",
+              "sample": "50000",
+              "include": true
+            },
+            {
+              "name": "consumables",
+              "type": "string",
+              "sample": "2 months",
+              "include": true
+            },
+            {
+              "name": "vehicle_class",
+              "type": "string",
+              "sample": "wheeled",
+              "include": true
+            }
+          ]
+        },
+        "characters_enhanced.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "name",
+              "type": "string",
+              "sample": "Yoda",
+              "include": true
+            },
+            {
+              "name": "gender",
+              "type": "string",
+              "sample": "male",
+              "include": true
+            },
+            {
+              "name": "birthYear",
+              "type": "string",
+              "sample": "896BBY",
+              "include": true
+            },
+            {
+              "name": "hairColor",
+              "type": "string",
+              "sample": "white",
+              "include": true
+            },
+            {
+              "name": "eyecolor",
+              "type": "string",
+              "sample": "brown",
+              "include": true
+            },
+            {
+              "name": "height",
+              "type": "string",
+              "sample": "66",
+              "include": true
+            },
+            {
+              "name": "homePlanet",
+              "type": "string",
+              "sample": "NA",
+              "include": true
+            },
+            {
+              "name": "weight",
+              "type": "string",
+              "sample": "17",
+              "include": true
+            },
+            {
+              "name": "socialName",
+              "type": "string",
+              "sample": "YODA",
+              "include": true
+            },
+            {
+              "name": "species",
+              "type": "string",
+              "sample": "Yoda's species",
+              "include": true
+            },
+            {
+              "name": "pagerank",
+              "type": "float",
+              "sample": "2.6774272604793796",
+              "include": true
+            },
+            {
+              "name": "betweenness",
+              "type": "float",
+              "sample": "184.5754407354513",
+              "include": true
+            },
+            {
+              "name": "closeness",
+              "type": "float",
+              "sample": "0.47619047619047616",
+              "include": true
+            },
+            {
+              "name": "louvain",
+              "type": "integer",
+              "sample": "127",
+              "include": true
+            }
+          ]
+        },
+        "interactions.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "source",
+              "type": "string",
+              "sample": "Luke Skywalker",
+              "include": true
+            },
+            {
+              "name": "target",
+              "type": "string",
+              "sample": "R2-D2",
+              "include": true
+            },
+            {
+              "name": "count",
+              "type": "integer",
+              "sample": "34",
+              "include": true
+            }
+          ]
+        },
+        "planets.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "name",
+              "type": "string",
+              "sample": "Alderaan",
+              "include": true
+            },
+            {
+              "name": "rotation_period",
+              "type": "string",
+              "sample": "24",
+              "include": true
+            },
+            {
+              "name": "orbital_period",
+              "type": "string",
+              "sample": "364",
+              "include": true
+            },
+            {
+              "name": "diameter",
+              "type": "string",
+              "sample": "12500",
+              "include": true
+            },
+            {
+              "name": "climate",
+              "type": "string",
+              "sample": "temperate",
+              "include": true
+            },
+            {
+              "name": "gravity",
+              "type": "string",
+              "sample": "1 standard",
+              "include": true
+            },
+            {
+              "name": "terrain",
+              "type": "string",
+              "sample": "grasslands, mountains",
+              "include": true
+            },
+            {
+              "name": "surface_water",
+              "type": "string",
+              "sample": "40",
+              "include": true
+            },
+            {
+              "name": "population",
+              "type": "string",
+              "sample": "2000000000",
+              "include": true
+            }
+          ]
+        },
+        "species.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "name",
+              "type": "string",
+              "sample": "Hutt",
+              "include": true
+            },
+            {
+              "name": "classification",
+              "type": "string",
+              "sample": "gastropod",
+              "include": true
+            },
+            {
+              "name": "designation",
+              "type": "string",
+              "sample": "sentient",
+              "include": true
+            },
+            {
+              "name": "average_height",
+              "type": "string",
+              "sample": "300",
+              "include": true
+            },
+            {
+              "name": "skin_colors",
+              "type": "string",
+              "sample": "green, brown, tan",
+              "include": true
+            },
+            {
+              "name": "hair_colors",
+              "type": "string",
+              "sample": "NA",
+              "include": true
+            },
+            {
+              "name": "eye_colors",
+              "type": "string",
+              "sample": "yellow, red",
+              "include": true
+            },
+            {
+              "name": "average_lifespan",
+              "type": "string",
+              "sample": "1000",
+              "include": true
+            },
+            {
+              "name": "language",
+              "type": "string",
+              "sample": "Huttese",
+              "include": true
+            },
+            {
+              "name": "homeworld",
+              "type": "string",
+              "sample": "Nal Hutta",
+              "include": true
+            }
+          ]
+        },
+        "starships.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "name",
+              "type": "string",
+              "sample": "Executor",
+              "include": true
+            },
+            {
+              "name": "model",
+              "type": "string",
+              "sample": "Executor-class star dreadnought",
+              "include": true
+            },
+            {
+              "name": "manufacturer",
+              "type": "string",
+              "sample": "Kuat Drive Yards, Fondor Shipyards",
+              "include": true
+            },
+            {
+              "name": "cost_in_credits",
+              "type": "string",
+              "sample": "1143350000",
+              "include": true
+            },
+            {
+              "name": "length",
+              "type": "string",
+              "sample": "19000",
+              "include": true
+            },
+            {
+              "name": "max_atmosphering_speed",
+              "type": "string",
+              "sample": "n/a",
+              "include": true
+            },
+            {
+              "name": "crew",
+              "type": "string",
+              "sample": "279144",
+              "include": true
+            },
+            {
+              "name": "passengers",
+              "type": "string",
+              "sample": "38000",
+              "include": true
+            },
+            {
+              "name": "cargo_capacity",
+              "type": "string",
+              "sample": "250000000",
+              "include": true
+            },
+            {
+              "name": "consumables",
+              "type": "string",
+              "sample": "6 years",
+              "include": true
+            },
+            {
+              "name": "hyperdrive_rating",
+              "type": "string",
+              "sample": "2.0",
+              "include": true
+            },
+            {
+              "name": "MGLT",
+              "type": "string",
+              "sample": "40",
+              "include": true
+            },
+            {
+              "name": "starship_class",
+              "type": "string",
+              "sample": "Star dreadnought",
+              "include": true
+            }
+          ]
+        }
+      }
+    },
+    "graphModel": {
+      "nodeSchemas": {
+        "n0": {
+          "label": "Character",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "name",
+              "type": "string",
+              "identifier": "k-EQloGiXsu-XF1axMxPe"
+            },
+            {
+              "property": "gender",
+              "type": "string",
+              "identifier": "mGv4vzPG5Te5ak-2nVOGs"
+            },
+            {
+              "property": "birthYear",
+              "type": "string",
+              "identifier": "gt3HVSToQ-U8N3s6Kfl9P"
+            },
+            {
+              "property": "hairColor",
+              "type": "string",
+              "identifier": "rOcIVbgyqVT_ME_JYdzt8"
+            },
+            {
+              "property": "eyecolor",
+              "type": "string",
+              "identifier": "sya4Z-oVoyd8cV4K8YOVp"
+            },
+            {
+              "property": "height",
+              "type": "integer",
+              "identifier": "H8anrFFYU3yw5uED1pY2K"
+            },
+            {
+              "property": "homePlanet",
+              "type": "string",
+              "identifier": "YIqDvOMw7-oQYAelaufxk"
+            },
+            {
+              "property": "weight",
+              "type": "integer",
+              "identifier": "EmdcC5t6yDaBznrZhuaIG"
+            },
+            {
+              "property": "socialName",
+              "type": "string",
+              "identifier": "bIy65X_uZKjPvkxeCoymX"
+            },
+            {
+              "property": "species",
+              "type": "string",
+              "identifier": "U7ibQ1nMEZa38McJXMlEq"
+            },
+            {
+              "property": "pagerank",
+              "type": "float",
+              "identifier": "02HnT8-p8DPgl9PKiF8CI"
+            },
+            {
+              "property": "betweenness",
+              "type": "float",
+              "identifier": "H4PnAgLoOJN-ZK5veSBQj"
+            },
+            {
+              "property": "closeness",
+              "type": "float",
+              "identifier": "1HpTJLNQ1pYSa1KPqDVbA"
+            },
+            {
+              "property": "louvain",
+              "type": "integer",
+              "identifier": "THDzAfiUD2Hf27g0yEQOf"
+            }
+          ],
+          "key": {
+            "properties": [
+              "k-EQloGiXsu-XF1axMxPe"
+            ],
+            "name": ""
+          }
+        },
+        "n1": {
+          "label": "Species",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "name",
+              "type": "string",
+              "identifier": "Ba5aN8Oc_J4PJ_Yy7XCh0"
+            },
+            {
+              "property": "classification",
+              "type": "string",
+              "identifier": "2LpQjBUSWpl1jATUcD-Vy"
+            },
+            {
+              "property": "designation",
+              "type": "string",
+              "identifier": "2DgqDZfaeCcNjQXGPJbRw"
+            },
+            {
+              "property": "average_height",
+              "type": "string",
+              "identifier": "VhtgkIwNYNslqEuNrCC68"
+            },
+            {
+              "property": "skin_colors",
+              "type": "string",
+              "identifier": "cFzMbSY_bifGFzHn7XF-b"
+            },
+            {
+              "property": "hair_colors",
+              "type": "string",
+              "identifier": "tIxT-hYcuKfnFyEIwQCXK"
+            },
+            {
+              "property": "eye_colors",
+              "type": "string",
+              "identifier": "5dHH-1A0XS3R8e0ih9KSe"
+            },
+            {
+              "property": "average_lifespan",
+              "type": "string",
+              "identifier": "s4M6kQdXNoRFSAy5s-kCM"
+            },
+            {
+              "property": "language",
+              "type": "string",
+              "identifier": "tQwI8mxa_zvrUvNCtj2h9"
+            },
+            {
+              "property": "homeworld",
+              "type": "string",
+              "identifier": "8JHRWUtyeheSzEl8RX1gN"
+            }
+          ],
+          "key": {
+            "properties": [
+              "Ba5aN8Oc_J4PJ_Yy7XCh0"
+            ],
+            "name": ""
+          }
+        },
+        "n2": {
+          "label": "Planet",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "name",
+              "type": "string",
+              "identifier": "2YdoiSULEzlwMxWqJZAXO"
+            },
+            {
+              "property": "rotation_period",
+              "type": "string",
+              "identifier": "zEC38_ULxZY_C8ujLjXRa"
+            },
+            {
+              "property": "orbital_period",
+              "type": "string",
+              "identifier": "V9jJSniEXIg1CwW3agBcG"
+            },
+            {
+              "property": "diameter",
+              "type": "string",
+              "identifier": "rUeKlXwm1EUMfWZqQIGKB"
+            },
+            {
+              "property": "climate",
+              "type": "string",
+              "identifier": "PxoXUCH-TwRWsiCF9Iin2"
+            },
+            {
+              "property": "gravity",
+              "type": "string",
+              "identifier": "r2t6jGSU-iuvD7b2PyJYt"
+            },
+            {
+              "property": "terrain",
+              "type": "string",
+              "identifier": "HSLAAOZs1UylZI1ONxiZV"
+            },
+            {
+              "property": "surface_water",
+              "type": "string",
+              "identifier": "QNjm6iXUfGvR7F3LIctgg"
+            },
+            {
+              "property": "population",
+              "type": "string",
+              "identifier": "36CAYNX8NlL9MBqHfPJND"
+            }
+          ],
+          "key": {
+            "properties": [
+              "2YdoiSULEzlwMxWqJZAXO"
+            ],
+            "name": ""
+          }
+        }
+      },
+      "relationshipSchemas": {
+        "n0": {
+          "type": "IS",
+          "sourceNodeSchema": "n0",
+          "targetNodeSchema": "n1",
+          "properties": []
+        },
+        "n1": {
+          "type": "HOMEWORLD",
+          "sourceNodeSchema": "n0",
+          "targetNodeSchema": "n2",
+          "properties": []
+        },
+        "n2": {
+          "type": "INTERACTS_WITH",
+          "sourceNodeSchema": "n0",
+          "targetNodeSchema": "n0",
+          "properties": [
+            {
+              "property": "count",
+              "type": "integer",
+              "identifier": "bQxX3FY0w4gHnIInL2lz1"
+            }
+          ]
+        }
+      }
+    },
+    "mappingModel": {
+      "nodeMappings": {
+        "n0": {
+          "nodeSchema": "n0",
+          "fileSchema": "characters_enhanced.csv",
+          "mappings": [
+            {
+              "field": "name"
+            },
+            {
+              "field": "gender"
+            },
+            {
+              "field": "birthYear"
+            },
+            {
+              "field": "hairColor"
+            },
+            {
+              "field": "eyecolor"
+            },
+            {
+              "field": "height"
+            },
+            {
+              "field": "homePlanet"
+            },
+            {
+              "field": "weight"
+            },
+            {
+              "field": "socialName"
+            },
+            {
+              "field": "species"
+            },
+            {
+              "field": "pagerank"
+            },
+            {
+              "field": "betweenness"
+            },
+            {
+              "field": "closeness"
+            },
+            {
+              "field": "louvain"
+            }
+          ]
+        },
+        "n1": {
+          "nodeSchema": "n1",
+          "fileSchema": "species.csv",
+          "mappings": [
+            {
+              "field": "name"
+            },
+            {
+              "field": "classification"
+            },
+            {
+              "field": "designation"
+            },
+            {
+              "field": "average_height"
+            },
+            {
+              "field": "skin_colors"
+            },
+            {
+              "field": "hair_colors"
+            },
+            {
+              "field": "eye_colors"
+            },
+            {
+              "field": "average_lifespan"
+            },
+            {
+              "field": "language"
+            },
+            {
+              "field": "homeworld"
+            }
+          ]
+        },
+        "n2": {
+          "nodeSchema": "n2",
+          "fileSchema": "planets.csv",
+          "mappings": [
+            {
+              "field": "name"
+            },
+            {
+              "field": "rotation_period"
+            },
+            {
+              "field": "orbital_period"
+            },
+            {
+              "field": "diameter"
+            },
+            {
+              "field": "climate"
+            },
+            {
+              "field": "gravity"
+            },
+            {
+              "field": "terrain"
+            },
+            {
+              "field": "surface_water"
+            },
+            {
+              "field": "population"
+            }
+          ]
+        }
+      },
+      "relationshipMappings": {
+        "n0": {
+          "relationshipSchema": "n0",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "name"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "species"
+            }
+          ],
+          "fileSchema": "characters_enhanced.csv"
+        },
+        "n1": {
+          "relationshipSchema": "n1",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "name"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "homePlanet"
+            }
+          ],
+          "fileSchema": "characters_enhanced.csv"
+        },
+        "n2": {
+          "relationshipSchema": "n2",
+          "mappings": [
+            {
+              "field": "count"
+            }
+          ],
+          "sourceMappings": [
+            {
+              "field": "source"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "target"
+            }
+          ],
+          "fileSchema": "interactions.csv"
+        }
+      }
+    },
+    "configurations": {
+      "idsToIgnore": []
+    }
+  }
+}

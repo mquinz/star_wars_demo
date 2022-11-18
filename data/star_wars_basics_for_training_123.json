@@ -1,0 +1,345 @@
+{
+  "style": {
+    "font-family": "Nunito Sans",
+    "background-color": "#F2F2F2",
+    "background-image": "",
+    "background-size": "100%",
+    "node-color": "#4C8EDA",
+    "border-width": 0,
+    "border-color": "#000000",
+    "radius": 75,
+    "node-padding": 5,
+    "node-margin": 2,
+    "outside-position": "auto",
+    "node-icon-image": "",
+    "node-background-image": "",
+    "icon-position": "inside",
+    "icon-size": 64,
+    "caption-position": "inside",
+    "caption-max-width": 200,
+    "caption-color": "#ffffff",
+    "caption-font-size": 20,
+    "caption-font-weight": "normal",
+    "label-position": "inside",
+    "label-display": "bare",
+    "label-color": "#ffffff",
+    "label-background-color": "#848484",
+    "label-border-color": "#848484",
+    "label-border-width": 3,
+    "label-font-size": 20,
+    "label-padding": 5,
+    "label-margin": 4,
+    "directionality": "directed",
+    "detail-position": "above",
+    "detail-orientation": "parallel",
+    "arrow-width": 3,
+    "arrow-color": "#848484",
+    "margin-start": 5,
+    "margin-end": 5,
+    "margin-peer": 20,
+    "attachment-start": "normal",
+    "attachment-end": "normal",
+    "relationship-icon-image": "",
+    "type-color": "#848484",
+    "type-background-color": "#F2F2F2",
+    "type-border-color": "#848484",
+    "type-border-width": 0,
+    "type-font-size": 21,
+    "type-padding": 5,
+    "property-position": "outside",
+    "property-alignment": "colon",
+    "property-color": "#848484",
+    "property-font-size": 20,
+    "property-font-weight": "normal"
+  },
+  "nodes": [
+    {
+      "id": "n1",
+      "position": {
+        "x": 579.9565373574089,
+        "y": 505.8004191573995
+      },
+      "caption": "",
+      "labels": [
+        "Character"
+      ],
+      "properties": {
+        "name": "Han Solo",
+        "birthYear": "aby20",
+        "pilot": "true",
+        "occupation": "smuggler"
+      },
+      "style": {}
+    },
+    {
+      "id": "n2",
+      "position": {
+        "x": 678.752688094361,
+        "y": -4
+      },
+      "caption": "",
+      "labels": [
+        "Character"
+      ],
+      "properties": {
+        "name": "Leia Organa",
+        "birthYear": "aby25"
+      },
+      "style": {}
+    },
+    {
+      "id": "n3",
+      "position": {
+        "x": 979.5089357851191,
+        "y": 296.756247690758
+      },
+      "caption": "",
+      "labels": [
+        "Character"
+      ],
+      "properties": {
+        "name": "Luke Skywalker",
+        "birthYear": "aby25",
+        "jedi": "true"
+      },
+      "style": {}
+    },
+    {
+      "id": "n4",
+      "position": {
+        "x": 227.4997800498739,
+        "y": 29.91479101648696
+      },
+      "caption": "",
+      "labels": [
+        "Character"
+      ],
+      "properties": {
+        "name": "Jabba the Hutt",
+        "wt": "1000"
+      },
+      "style": {}
+    },
+    {
+      "id": "n5",
+      "position": {
+        "x": -8.70544382367967,
+        "y": 261.11179999947825
+      },
+      "caption": "",
+      "labels": [
+        "Starship"
+      ],
+      "properties": {
+        "name": "Millennium Falcom",
+        "length": "77"
+      },
+      "style": {
+        "node-color": "#68bc00"
+      }
+    },
+    {
+      "id": "n6",
+      "position": {
+        "x": 118.74865534478664,
+        "y": 635.2170691827596
+      },
+      "caption": "",
+      "labels": [
+        "Character"
+      ],
+      "properties": {
+        "name": "Chewbacca",
+        "birthYear": "bby5",
+        "pilot": "true"
+      },
+      "style": {}
+    },
+    {
+      "id": "n7",
+      "position": {
+        "x": 947.2249272358298,
+        "y": 635.2170691827596
+      },
+      "caption": "",
+      "style": {
+        "node-color": "#7b64ff"
+      },
+      "labels": [
+        "Organization"
+      ],
+      "properties": {
+        "name": "Rebels"
+      }
+    },
+    {
+      "id": "n8",
+      "position": {
+        "x": 418.1066271867003,
+        "y": 763.9958473625722
+      },
+      "caption": "",
+      "style": {},
+      "labels": [
+        "Character"
+      ],
+      "properties": {
+        "name": "R2-D2"
+      }
+    },
+    {
+      "id": "n9",
+      "position": {
+        "x": 1105.4110538845553,
+        "y": 78.68738236199758
+      },
+      "caption": "",
+      "style": {
+        "node-color": "#d33115"
+      },
+      "labels": [
+        "Actor"
+      ],
+      "properties": {
+        "name": "Mark Hamil"
+      }
+    },
+    {
+      "id": "n10",
+      "position": {
+        "x": 678.752688094361,
+        "y": 790.8564199606924
+      },
+      "caption": "",
+      "style": {
+        "node-color": "#d33115"
+      },
+      "labels": [
+        "Actor"
+      ],
+      "properties": {
+        "name": "Harrison Ford"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "n0",
+      "fromId": "n1",
+      "toId": "n2",
+      "type": "MARRIED_TO",
+      "properties": {
+        "year": "aby55"
+      },
+      "style": {
+        "detail-position": "inline"
+      }
+    },
+    {
+      "id": "n1",
+      "fromId": "n2",
+      "toId": "n3",
+      "type": "TWIN_OF",
+      "properties": {},
+      "style": {
+        "detail-position": "inline"
+      }
+    },
+    {
+      "id": "n2",
+      "fromId": "n1",
+      "toId": "n4",
+      "type": "WORKED_FOR",
+      "properties": {
+        "year": "aby50"
+      },
+      "style": {
+        "detail-position": "inline"
+      }
+    },
+    {
+      "id": "n3",
+      "fromId": "n1",
+      "toId": "n5",
+      "type": "OWNS",
+      "properties": {},
+      "style": {
+        "detail-position": "below"
+      }
+    },
+    {
+      "id": "n4",
+      "fromId": "n1",
+      "toId": "n5",
+      "type": "PILOT_OF",
+      "properties": {},
+      "style": {
+        "detail-position": "above"
+      }
+    },
+    {
+      "id": "n5",
+      "fromId": "n4",
+      "toId": "n2",
+      "type": "IMPRISONED",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n6",
+      "fromId": "n1",
+      "toId": "n6",
+      "type": "FRIEND_OF",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n7",
+      "fromId": "n6",
+      "toId": "n5",
+      "type": "CO_PILOT_OF",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n8",
+      "type": "FRIEND_OF",
+      "style": {},
+      "properties": {},
+      "fromId": "n1",
+      "toId": "n3"
+    },
+    {
+      "id": "n9",
+      "type": "MEMBER_OF",
+      "style": {},
+      "properties": {},
+      "fromId": "n3",
+      "toId": "n7"
+    },
+    {
+      "id": "n10",
+      "type": "FRIEND_OF",
+      "style": {},
+      "properties": {},
+      "fromId": "n6",
+      "toId": "n8"
+    },
+    {
+      "id": "n11",
+      "type": "PLAYED",
+      "style": {},
+      "properties": {},
+      "fromId": "n9",
+      "toId": "n3"
+    },
+    {
+      "id": "n12",
+      "type": "PLAYED",
+      "style": {},
+      "properties": {},
+      "fromId": "n10",
+      "toId": "n1"
+    }
+  ]
+}

@@ -1,0 +1,451 @@
+﻿source,target,count
+Luke Skywalker,R2-D2,34
+Luke Skywalker,ZEV,1
+Luke Skywalker,Wedge Antilles,4
+Luke Skywalker,Obi-Wan Kenobi,22
+Luke Skywalker,Yoda,6
+Luke Skywalker,Rey,1
+Luke Skywalker,Owen Lars,3
+Luke Skywalker,Mon Mothma,1
+Luke Skywalker,RED LEADER,3
+Luke Skywalker,RED TEN,1
+C-3PO,Padmé Amidala,12
+C-3PO,Watto,1
+C-3PO,Finn,1
+C-3PO,Darth Vader,1
+C-3PO,Gregar Typho,2
+C-3PO,Yoda,1
+C-3PO,Chewbacca,39
+C-3PO,Palpatine,2
+C-3PO,Han Solo,54
+C-3PO,Owen Lars,4
+C-3PO,RED LEADER,1
+C-3PO,Luke Skywalker,29
+C-3PO,DERLIN,1
+C-3PO,CAPTAIN ANTILLES,1
+C-3PO,LANDO,8
+C-3PO,Jabba Desilijic Tiure,3
+C-3PO,Obi-Wan Kenobi,9
+C-3PO,Kit Fisto,1
+C-3PO,R2-D2,55
+C-3PO,Leia Organa,49
+C-3PO,Mon Mothma,1
+C-3PO,Cliegg Lars,1
+C-3PO,RIEEKAN,1
+C-3PO,Poe Dameron,2
+C-3PO,Qui-Gon Jinn,1
+C-3PO,SNAP,1
+R2-D2,Yoda,5
+R2-D2,Watto,3
+Darth Vader,Luke Skywalker,7
+Darth Vader,JERJERROD,1
+Darth Vader,Obi-Wan Kenobi,1
+Darth Vader,OZZEL,2
+Darth Vader,NEEDA,1
+Darth Vader,Leia Organa,2
+Darth Vader,Han Solo,2
+Darth Vader,Palpatine,7
+Darth Vader,PIETT,8
+Darth Vader,TARKIN,7
+Darth Vader,LANDO,4
+Darth Vader,R2-D2,2
+Darth Vader,MOTTI,1
+Leia Organa,Mon Mothma,1
+Leia Organa,R2-D2,23
+Leia Organa,SNAP,1
+Leia Organa,TARKIN,1
+Leia Organa,RIEEKAN,4
+Leia Organa,Poe Dameron,3
+Leia Organa,Rey,1
+Leia Organa,MOTTI,1
+Leia Organa,Obi-Wan Kenobi,1
+Leia Organa,RED LEADER,1
+Leia Organa,Luke Skywalker,26
+Owen Lars,Padmé Amidala,4
+Owen Lars,R2-D2,2
+Beru Whitesun lars,Owen Lars,4
+Beru Whitesun lars,C-3PO,3
+Beru Whitesun lars,Luke Skywalker,3
+Beru Whitesun lars,Padmé Amidala,1
+Beru Whitesun lars,Cliegg Lars,1
+Beru Whitesun lars,Leia Organa,1
+Beru Whitesun lars,R2-D2,1
+Biggs Darklighter,Leia Organa,1
+Biggs Darklighter,RED LEADER,3
+Biggs Darklighter,Luke Skywalker,4
+Biggs Darklighter,GOLD LEADER,1
+Biggs Darklighter,C-3PO,1
+Biggs Darklighter,Wedge Antilles,2
+Biggs Darklighter,R2-D2,1
+Biggs Darklighter,CAMIE,2
+Obi-Wan Kenobi,TC-14,1
+Obi-Wan Kenobi,R2-D2,28
+Obi-Wan Kenobi,Poggle the Lesser,1
+Obi-Wan Kenobi,Yoda,20
+Obi-Wan Kenobi,PK-4,1
+Obi-Wan Kenobi,Tion Medon,1
+Obi-Wan Kenobi,Shmi Skywalker,1
+Obi-Wan Kenobi,ODD BALL,2
+Obi-Wan Kenobi,Padmé Amidala,9
+Obi-Wan Kenobi,TAUN WE,5
+Obi-Wan Kenobi,Qui-Gon Jinn,26
+Obi-Wan Kenobi,SENATOR ASK AAK,1
+Obi-Wan Kenobi,SIO BIBBLE,1
+Obi-Wan Kenobi,Ric Olié,3
+Obi-Wan Kenobi,SUN RIT,1
+Anakin Skywalker,BRAVO TWO,2
+Anakin Skywalker,RUWEE,3
+Anakin Skywalker,RABE,1
+Anakin Skywalker,Qui-Gon Jinn,22
+Anakin Skywalker,Obi-Wan Kenobi,46
+Anakin Skywalker,ODD BALL,2
+Anakin Skywalker,SUN RIT,1
+Anakin Skywalker,Palpatine,14
+Anakin Skywalker,JIRA,2
+Anakin Skywalker,SEBULBA,2
+Anakin Skywalker,CLONE COMMANDER CODY,1
+Anakin Skywalker,C-3PO,10
+Anakin Skywalker,SIO BIBBLE,1
+Anakin Skywalker,Beru Whitesun lars,1
+Anakin Skywalker,Watto,5
+Anakin Skywalker,Cliegg Lars,2
+Anakin Skywalker,Bail Prestor Organa,2
+Anakin Skywalker,SOLA,1
+Anakin Skywalker,CAPTAIN PANAKA,2
+Anakin Skywalker,Ki-Adi-Mundi,2
+Anakin Skywalker,Darth Vader,1
+Anakin Skywalker,Dooku,3
+Anakin Skywalker,R2-D2,30
+Anakin Skywalker,Grievous,1
+Anakin Skywalker,Ric Olié,4
+Anakin Skywalker,Nute Gunray,1
+Anakin Skywalker,Yoda,9
+Anakin Skywalker,Greedo,1
+Anakin Skywalker,Padmé Amidala,41
+Anakin Skywalker,Shmi Skywalker,8
+Anakin Skywalker,WALD,2
+Anakin Skywalker,Kit Fisto,3
+Anakin Skywalker,Luke Skywalker,1
+Anakin Skywalker,JOBAL,1
+Anakin Skywalker,Mace Windu,9
+Anakin Skywalker,Poggle the Lesser,1
+Anakin Skywalker,Owen Lars,3
+Anakin Skywalker,BOSS NASS,1
+Anakin Skywalker,Gregar Typho,3
+Anakin Skywalker,Jabba Desilijic Tiure,1
+Anakin Skywalker,BRAVO THREE,1
+Anakin Skywalker,Jar Jar Binks,12
+Chewbacca,RIEEKAN,1
+Chewbacca,Jabba Desilijic Tiure,3
+Chewbacca,LANDO,20
+Chewbacca,Mas Amedda,2
+Chewbacca,Luke Skywalker,32
+Chewbacca,Rey,13
+Chewbacca,KYLO REN,3
+Chewbacca,Leia Organa,48
+Chewbacca,Obi-Wan Kenobi,6
+Chewbacca,Poe Dameron,2
+Chewbacca,Han Solo,77
+Chewbacca,Darth Vader,2
+Chewbacca,R2-D2,17
+Chewbacca,Finn,20
+Han Solo,Poe Dameron,2
+Han Solo,R2-D2,18
+Han Solo,SNAP,1
+Han Solo,RIEEKAN,3
+Han Solo,Luke Skywalker,43
+Han Solo,Obi-Wan Kenobi,10
+Han Solo,Mas Amedda,4
+Han Solo,Mon Mothma,1
+Han Solo,Jabba Desilijic Tiure,1
+Han Solo,LANDO,12
+Han Solo,KYLO REN,3
+Han Solo,Leia Organa,69
+Han Solo,ZEV,1
+Han Solo,Rey,17
+Greedo,Qui-Gon Jinn,1
+Greedo,WALD,1
+Greedo,Han Solo,1
+Jabba Desilijic Tiure,Shmi Skywalker,1
+Jabba Desilijic Tiure,SEBULBA,1
+Jabba Desilijic Tiure,Jar Jar Binks,1
+Jabba Desilijic Tiure,Padmé Amidala,1
+Jabba Desilijic Tiure,Qui-Gon Jinn,1
+Jabba Desilijic Tiure,Luke Skywalker,2
+Jabba Desilijic Tiure,R2-D2,4
+Palpatine,VALORUM,2
+Palpatine,GENERAL CEEL,1
+Palpatine,Mace Windu,3
+Palpatine,ORN FREE TAA,2
+Palpatine,Nute Gunray,6
+Palpatine,SENATOR ASK AAK,2
+Palpatine,Jar Jar Binks,5
+Palpatine,Padmé Amidala,5
+Palpatine,Yoda,2
+Palpatine,Ki-Adi-Mundi,1
+Palpatine,Obi-Wan Kenobi,5
+Palpatine,Luke Skywalker,3
+Palpatine,SIO BIBBLE,1
+Palpatine,Qui-Gon Jinn,1
+Palpatine,R2-D2,5
+Palpatine,RUNE,3
+Boba Fett,Darth Vader,3
+Boba Fett,Han Solo,1
+Boba Fett,C-3PO,1
+Boba Fett,LANDO,2
+Boba Fett,Leia Organa,1
+Boba Fett,Chewbacca,2
+Boba Fett,PIETT,1
+Boba Fett,TAUN WE,2
+Boba Fett,Jango Fett,3
+Boba Fett,Obi-Wan Kenobi,1
+Bossk,Jabba Desilijic Tiure,1
+Bossk,C-3PO,2
+Bossk,Leia Organa,1
+Bossk,Han Solo,1
+Ackbar,Luke Skywalker,1
+Ackbar,SNAP,1
+Ackbar,Finn,1
+Ackbar,Han Solo,2
+Ackbar,LANDO,5
+Ackbar,Mon Mothma,1
+Ackbar,C-3PO,2
+Ackbar,Wedge Antilles,1
+Ackbar,Poe Dameron,1
+Ackbar,Leia Organa,2
+Ackbar,ADMIRAL STATURA,1
+Mon Mothma,Padmé Amidala,2
+Qui-Gon Jinn,SIO BIBBLE,2
+Qui-Gon Jinn,SEBULBA,2
+Qui-Gon Jinn,Watto,6
+Qui-Gon Jinn,WALD,2
+Qui-Gon Jinn,Yoda,3
+Qui-Gon Jinn,Ric Olié,2
+Qui-Gon Jinn,TC-14,1
+Qui-Gon Jinn,R2-D2,13
+Qui-Gon Jinn,RABE,1
+Qui-Gon Jinn,Shmi Skywalker,8
+Qui-Gon Jinn,VALORUM,1
+Nute Gunray,Obi-Wan Kenobi,1
+Nute Gunray,Poggle the Lesser,2
+Nute Gunray,RUNE,8
+Nute Gunray,Padmé Amidala,2
+Nute Gunray,Qui-Gon Jinn,1
+Nute Gunray,SUN RIT,2
+Nute Gunray,TEY HOW,1
+Nute Gunray,SIO BIBBLE,2
+Nute Gunray,TC-14,1
+Jar Jar Binks,Obi-Wan Kenobi,15
+Jar Jar Binks,Qui-Gon Jinn,22
+Jar Jar Binks,Ric Olié,1
+Jar Jar Binks,WALD,1
+Jar Jar Binks,Shmi Skywalker,3
+Jar Jar Binks,VALORUM,1
+Jar Jar Binks,TARPALS,2
+Jar Jar Binks,Padmé Amidala,10
+Jar Jar Binks,Kit Fisto,1
+Jar Jar Binks,SENATOR ASK AAK,1
+Jar Jar Binks,SIO BIBBLE,1
+Jar Jar Binks,Yoda,1
+Jar Jar Binks,ORN FREE TAA,1
+Jar Jar Binks,SEBULBA,2
+Jar Jar Binks,Mace Windu,1
+Darth Maul,Palpatine,3
+Darth Maul,Nute Gunray,3
+Darth Maul,RUNE,1
+Darth Maul,GENERAL CEEL,1
+Bib Fortuna,Jabba Desilijic Tiure,1
+Bib Fortuna,Luke Skywalker,1
+Bib Fortuna,C-3PO,2
+Mace Windu,SENATOR ASK AAK,1
+Mace Windu,Yoda,16
+Mace Windu,RABE,1
+Mace Windu,Qui-Gon Jinn,2
+Mace Windu,Obi-Wan Kenobi,9
+Mace Windu,Padmé Amidala,2
+Ki-Adi-Mundi,RABE,1
+Ki-Adi-Mundi,Qui-Gon Jinn,2
+Ki-Adi-Mundi,PLO KOON,1
+Ki-Adi-Mundi,Yoda,4
+Ki-Adi-Mundi,Mace Windu,4
+Ki-Adi-Mundi,Obi-Wan Kenobi,1
+Kit Fisto,R2-D2,2
+Kit Fisto,Qui-Gon Jinn,2
+Kit Fisto,Padmé Amidala,1
+Kit Fisto,WALD,1
+Kit Fisto,Shmi Skywalker,1
+Kit Fisto,Watto,1
+Mas Amedda,Rey,2
+Gregar Typho,R2-D2,1
+Gregar Typho,Obi-Wan Kenobi,2
+Gregar Typho,Padmé Amidala,2
+Gregar Typho,Jar Jar Binks,1
+Cliegg Lars,Owen Lars,2
+Cliegg Lars,Padmé Amidala,2
+Poggle the Lesser,SUN RIT,2
+Dooku,Padmé Amidala,3
+Dooku,Yoda,2
+Dooku,Jango Fett,1
+Dooku,SUN RIT,1
+Dooku,Obi-Wan Kenobi,3
+Dooku,Poggle the Lesser,1
+Dooku,Mace Windu,2
+Dooku,Palpatine,2
+Dooku,Nute Gunray,1
+Bail Prestor Organa,Palpatine,6
+Bail Prestor Organa,CAPTAIN ANTILLES,2
+Bail Prestor Organa,Mon Mothma,2
+Bail Prestor Organa,Mace Windu,2
+Bail Prestor Organa,FANG ZAR,2
+Bail Prestor Organa,Yoda,8
+Bail Prestor Organa,C-3PO,3
+Bail Prestor Organa,R2-D2,3
+Bail Prestor Organa,Jar Jar Binks,1
+Bail Prestor Organa,Ki-Adi-Mundi,1
+Bail Prestor Organa,VALORUM,1
+Bail Prestor Organa,GIDDEAN DANU,1
+Bail Prestor Organa,SENATOR ASK AAK,1
+Bail Prestor Organa,Padmé Amidala,5
+Bail Prestor Organa,Qui-Gon Jinn,1
+Bail Prestor Organa,Obi-Wan Kenobi,8
+Jango Fett,TAUN WE,1
+Jango Fett,Obi-Wan Kenobi,1
+Grievous,Nute Gunray,1
+Grievous,Obi-Wan Kenobi,2
+Finn,Poe Dameron,11
+Finn,Leia Organa,3
+Finn,KYLO REN,2
+Finn,SNAP,1
+Finn,Rey,29
+Finn,Han Solo,23
+Finn,Mas Amedda,2
+Rey,UNKAR PLUTT,2
+Poe Dameron,YOLO ZIFF,1
+Poe Dameron,SNAP,2
+BB8,Rey,17
+BB8,Chewbacca,8
+BB8,Leia Organa,3
+BB8,Mas Amedda,3
+BB8,Finn,15
+BB8,UNKAR PLUTT,1
+BB8,R2-D2,2
+BB8,Poe Dameron,8
+BB8,C-3PO,3
+BB8,LOR SAN TEKKA,2
+BB8,Han Solo,9
+Captain Phasma,Chewbacca,1
+Captain Phasma,Finn,3
+Captain Phasma,GENERAL HUX,1
+Captain Phasma,Han Solo,2
+Captain Phasma,KYLO REN,1
+Captain Phasma,Poe Dameron,1
+Captain Phasma,LOR SAN TEKKA,1
+Padmé Amidala,RUWEE,1
+Padmé Amidala,SIO BIBBLE,1
+Padmé Amidala,SEBULBA,2
+Padmé Amidala,R2-D2,24
+Padmé Amidala,SUN RIT,1
+Padmé Amidala,Watto,3
+Padmé Amidala,Yoda,1
+Padmé Amidala,SOLA,1
+Padmé Amidala,Qui-Gon Jinn,16
+Padmé Amidala,Shmi Skywalker,5
+Padmé Amidala,Poggle the Lesser,1
+ADMIRAL STATURA,Han Solo,1
+ADMIRAL STATURA,C-3PO,2
+ADMIRAL STATURA,Poe Dameron,1
+ADMIRAL STATURA,Finn,1
+ADMIRAL STATURA,SNAP,1
+ADMIRAL STATURA,Leia Organa,2
+BALA-TIK,Chewbacca,1
+BALA-TIK,Rey,1
+BALA-TIK,Finn,1
+BALA-TIK,Han Solo,2
+BALA-TIK,BB8,1
+BOSS NASS,Jar Jar Binks,2
+BOSS NASS,CAPTAIN PANAKA,1
+BOSS NASS,Qui-Gon Jinn,2
+BOSS NASS,Padmé Amidala,2
+BOSS NASS,Obi-Wan Kenobi,2
+BRAVO THREE,Ric Olié,2
+BRAVO THREE,BRAVO TWO,2
+BRAVO TWO,Ric Olié,4
+CAMIE,Luke Skywalker,2
+CAPTAIN ANTILLES,R2-D2,1
+CAPTAIN PANAKA,Palpatine,3
+CAPTAIN PANAKA,Padmé Amidala,7
+CAPTAIN PANAKA,Ric Olié,2
+CAPTAIN PANAKA,Obi-Wan Kenobi,7
+CAPTAIN PANAKA,Qui-Gon Jinn,9
+CAPTAIN PANAKA,Jar Jar Binks,7
+CAPTAIN PANAKA,SIO BIBBLE,3
+CLONE COMMANDER CODY,Mace Windu,1
+CLONE COMMANDER CODY,Yoda,1
+CLONE COMMANDER CODY,Obi-Wan Kenobi,2
+CLONE COMMANDER GREE,Yoda,1
+COLONEL DATOO,GENERAL HUX,1
+DACK,Luke Skywalker,3
+DERLIN,Leia Organa,1
+DODONNA,Wedge Antilles,1
+DODONNA,GOLD LEADER,1
+DODONNA,Luke Skywalker,1
+DOFINE,TC-14,1
+DOFINE,Nute Gunray,1
+DOFINE,TEY HOW,1
+ELLO ASTY,NIV LEK,2
+ELLO ASTY,Poe Dameron,3
+ELLO ASTY,JESS,2
+ELLO ASTY,YOLO ZIFF,1
+FANG ZAR,Mon Mothma,2
+FANG ZAR,Padmé Amidala,2
+FANG ZAR,GIDDEAN DANU,1
+FODE/BEED,Jar Jar Binks,2
+FODE/BEED,Jabba Desilijic Tiure,1
+FODE/BEED,Padmé Amidala,1
+GENERAL CEEL,Jar Jar Binks,1
+GENERAL CEEL,Nute Gunray,1
+GENERAL HUX,SNOKE,3
+GENERAL HUX,KYLO REN,5
+GENERAL HUX,LIEUTENANT MITAKA,1
+GIDDEAN DANU,Padmé Amidala,1
+GIDDEAN DANU,Mon Mothma,1
+GOLD LEADER,Luke Skywalker,1
+GOLD LEADER,RED LEADER,1
+GOLD LEADER,Wedge Antilles,1
+JANSON,Wedge Antilles,2
+JESS,SNAP,1
+JESS,Poe Dameron,2
+JESS,NIV LEK,2
+JESS,YOLO ZIFF,1
+JIRA,Qui-Gon Jinn,2
+JIRA,Padmé Amidala,1
+JOBAL,RUWEE,1
+JOBAL,SOLA,2
+JOBAL,Padmé Amidala,1
+KYLO REN,SNOKE,2
+KYLO REN,Poe Dameron,2
+KYLO REN,LOR SAN TEKKA,1
+KYLO REN,LIEUTENANT MITAKA,2
+KYLO REN,Rey,4
+LAMA SU,TAUN WE,2
+LAMA SU,Obi-Wan Kenobi,6
+LANDO,Luke Skywalker,6
+LANDO,Wedge Antilles,6
+LANDO,R2-D2,5
+LANDO,Leia Organa,12
+LANDO,Mon Mothma,1
+LOR SAN TEKKA,Poe Dameron,3
+MOTTI,TARKIN,2
+NEEDA,PIETT,1
+NIV LEK,Poe Dameron,2
+NIV LEK,YOLO ZIFF,1
+ORN FREE TAA,SENATOR ASK AAK,1
+OZZEL,PIETT,2
+PK-4,TC-14,1
+RABE,Yoda,1
+RED LEADER,Wedge Antilles,3
+RED LEADER,RED TEN,1
+RUNE,TEY HOW,2
+RUWEE,SOLA,1
+SEBULBA,Shmi Skywalker,1
+SENATOR ASK AAK,Yoda,1
